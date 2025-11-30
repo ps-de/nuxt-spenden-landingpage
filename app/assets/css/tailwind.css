@@ -1,0 +1,93 @@
+/**
+ * tailwind.css - Global Styles & Custom Animations
+ * 
+ * Tailwind v4 Import + Custom CI-Farben + Animations
+ * 
+ * CSS Variables (CI-Farben):
+ * - --color-accent: #ea580c (orange-600) - Primäre CI-Farbe
+ * - --color-accent-dark: #c2410c (orange-700) - Dunklere Variante
+ * - --color-accent-darker: #9a3412 (orange-800) - Dunkelste Variante
+ * 
+ * Verwendung: var(--color-accent) oder direkt orange-600 Klasse
+ * 
+ * Custom Animations:
+ * 1. pulse-soft: Sanftes Pulsieren (opacity 1 → 0.85)
+ *    - Verwendung: "Jetzt spenden" Button im Hero
+ *    - Duration: 2s, infinite loop, ease-in-out
+ * 
+ * 2. slideDown: Accordion-Animation
+ *    - Verwendung: FAQ details/summary Pattern
+ *    - Duration: 0.3s, ease-out
+ *    - Effekt: Opacity 0→1, max-height 0→500px
+ * 
+ * Global Settings:
+ * - scroll-behavior: smooth für alle internen Links
+ */
+@import "tailwindcss";
+
+/* CI-Farben als CSS-Variablen für zentrale Verwaltung */
+:root {
+  --color-accent: #ea580c; /* orange-600 - Primäre CI-Farbe */
+  --color-accent-dark: #c2410c; /* orange-700 - Dunklere Variante */
+  --color-accent-darker: #9a3412; /* orange-800 - Dunkelste Variante */
+}
+
+/* Global Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 
+ * Custom Animation: pulse-soft
+ * Sanfteres Pulsieren als natives Tailwind animate-pulse
+ * Verwendung: CTA-Button "Jetzt spenden"
+ */
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85; /* Reduzierte Transparenz (von 0.5 auf 0.85) */
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* 
+ * Accordion Animation für FAQ-Section
+ * Native <details>/<summary> Pattern mit CSS-Animationen
+ */
+
+/* Summary Transition für Hover-Effekte */
+details summary {
+  transition: all 0.3s ease;
+}
+
+/* Abstand nach geöffnetem Summary */
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+/* Content-Bereich Animation */
+details div {
+  animation: slideDown 0.3s ease-out;
+  overflow: hidden;
+}
+
+/* 
+ * Custom Animation: slideDown
+ * Sanftes Einblenden und Ausklappen von Accordion-Content
+ * Kombiniert Opacity und max-height für flüssigen Effekt
+ */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px; /* Ausreichend für längste FAQ-Antwort */
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "Wie wird meine Spende verwendet?",
+    "answer": "Ihre Spende fließt zu 100% in unsere Projekte vor Ort. Wir investieren in Bildungsprogramme, medizinische Versorgung und nachhaltige Gemeinschaftsprojekte. Ein detaillierter Jahresbericht zeigt transparent auf, wie die Gelder eingesetzt werden. Administrative Kosten werden durch separate Fördermittel gedeckt."
+  },
+  {
+    "id": 2,
+    "question": "Kann ich meine Spende steuerlich absetzen?",
+    "answer": "Ja, als anerkannte gemeinnützige Organisation stellen wir Ihnen automatisch eine Spendenbescheinigung aus. Diese erhalten Sie bis Ende Februar des Folgejahres per E-Mail oder Post. Für Spenden bis 300 Euro reicht der vereinfachte Nachweis (Kontoauszug) für das Finanzamt aus."
+  },
+  {
+    "id": 3,
+    "question": "Wie sicher ist die Online-Spende?",
+    "answer": "Ihre Daten werden über eine verschlüsselte SSL-Verbindung übertragen und sind somit vor unbefugtem Zugriff geschützt. Wir arbeiten ausschließlich mit zertifizierten Zahlungsdienstleistern zusammen. Ihre persönlichen Informationen werden nicht an Dritte weitergegeben und nur für die Spendenabwicklung verwendet."
+  },
+  {
+    "id": 4,
+    "question": "Kann ich auch regelmäßig spenden?",
+    "answer": "Ja, wir bieten die Möglichkeit einer monatlichen Dauerspende an. Mit einer regelmäßigen Unterstützung helfen Sie uns, langfristig zu planen und nachhaltige Projekte zu realisieren. Sie können die Dauerspende jederzeit ohne Angabe von Gründen beenden. Kontaktieren Sie uns einfach per E-Mail oder Telefon."
+  }
+]
